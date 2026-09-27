@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nail Art Salon & Academy — nail artistry, lashes, brows and lip blush. Book your appointment on WhatsApp.">
+  <title>Nail Art Salon & Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home">Nail Art <span>Salon & Academy</span></a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#academy">Academy</a>
+        <a href="#booking" class="nav-cta">Book Appointment</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">BEAUTY • DETAIL • ARTISTRY</p>
+        <h1>Your nails,<br><em>your signature.</em></h1>
+        <p class="hero-text">Beautiful nail artistry and beauty services, created with care and attention to every detail.</p>
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-primary">Book an Appointment</a>
+          <a href="#gallery" class="btn btn-ghost">View Our Work</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">OUR SERVICES</p>
+          <h2>Beauty made <em>personal.</em></h2>
+          <p>Choose your service and let us create a look made for you.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-icon">✦</div><h3>Nail Artistry</h3><p>From clean, elegant sets to detailed statement nail art, created to suit your style.</p><a href="#booking" data-service="Nail Artistry">Book this service →</a></article>
+          <article class="service-card"><div class="service-icon">◌</div><h3>Lashes</h3><p>Beautiful lash looks designed to complement your eyes and overall look.</p><a href="#booking" data-service="Lashes">Book this service →</a></article>
+          <article class="service-card"><div class="service-icon">⌁</div><h3>Brows</h3><p>Brows shaped and enhanced with care, including microblading services.</p><a href="#booking" data-service="Brows">Book this service →</a></article>
+          <article class="service-card"><div class="service-icon">♡</div><h3>Lip Blush</h3><p>A soft, refined lip-enhancement service for a naturally polished appearance.</p><a href="#booking" data-service="Lip Blush">Book this service →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">OUR WORK</p>
+          <h2>A little <em>inspiration.</em></h2>
+          <p>Explore a selection of our nail and lash work.</p>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item large"><img src="images/nail-work-1.jpg" alt="Yellow and nude nail art design"></figure>
+          <figure class="gallery-item"><img src="images/lashes-1.jpg" alt="Lash extension close-up"></figure>
+          <figure class="gallery-item"><img src="images/nail-work-2.jpg" alt="Soft pink nail set"></figure>
+          <figure class="gallery-item"><img src="images/nail-work-3.jpg" alt="Red and black detailed nail art"></figure>
+          <figure class="gallery-item"><img src="images/nail-work-4.jpg" alt="Pearl chrome nail set"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="academy" class="academy section">
+      <div class="container academy-inner">
+        <div>
+          <p class="eyebrow">THE ACADEMY</p>
+          <h2>Learn the art.<br><em>Build your craft.</em></h2>
+          <p>Our academy is for aspiring beauty professionals who want to develop practical skills, creativity and confidence.</p>
+          <ul>
+            <li>Hands-on learning</li>
+            <li>Technique-focused training</li>
+            <li>Guidance for building your beauty career</li>
+          </ul>
+          <a href="#booking" class="btn btn-primary">Enquire About Courses</a>
+        </div>
+        <div class="academy-card">
+          <div class="academy-placeholder">ACADEMY<br><span>Training & Skills</span></div>
+          <p>Ask us about upcoming training batches and course availability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="booking section">
+      <div class="container booking-grid">
+        <div class="booking-copy">
+          <p class="eyebrow">BOOK YOUR VISIT</p>
+          <h2>Let's create your <em>next look.</em></h2>
+          <p>Fill in the details and we'll open WhatsApp with your appointment request ready to send.</p>
+          <div class="contact-note"><strong>WhatsApp</strong><span>+91 98756 93596</span></div>
+          <a class="facebook-link" href="https://www.facebook.com/Kolkatanaillovers?mibextid=ZbWKWL" target="_blank" rel="noopener">Visit us on Facebook ↗</a>
+        </div>
+
+        <form id="bookingForm" class="booking-form">
+          <label>Full Name<input id="name" name="name" type="text" placeholder="Your name" required></label>
+          <label>Phone Number<input id="phone" name="phone" type="tel" placeholder="Your phone number" required></label>
+          <label>Service
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Nail Artistry</option>
+              <option>Lashes</option>
+              <option>Brows / Microblading</option>
+              <option>Lip Blush</option>
+              <option>Academy Enquiry</option>
+            </select>
+          </label>
+          <div class="two-col">
+            <label>Preferred Date<input id="date" name="date" type="date" required></label>
+            <label>Preferred Time<input id="time" name="time" type="time" required></label>
+          </div>
+          <label>Message <span class="optional">(optional)</span><textarea id="message" name="message" rows="4" placeholder="Anything you'd like us to know?"></textarea></label>
+          <button class="btn btn-primary full" type="submit">Send Booking Request on WhatsApp ↗</button>
+          <small>Your WhatsApp app will open with your booking details filled in. You can review them before sending.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>Nail Art Salon & Academy</strong><p>Beauty, artistry & education.</p></div>
+      <div><a href="https://www.facebook.com/Kolkatanaillovers?mibextid=ZbWKWL" target="_blank" rel="noopener">Facebook</a><a href="#booking">Book Appointment</a></div>
+    </div>
+    <p class="copyright">© 2026 Nail Art Salon & Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
